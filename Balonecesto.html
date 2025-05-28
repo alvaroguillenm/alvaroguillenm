@@ -1,99 +1,285 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Álvaro Guillén Martín</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f5f5f5;
-      color: #333;
-    }
-    header {
-      background-color: #333;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-    }
-    nav {
-      background-color: #444;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem 0;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-    }
-    main {
-      max-width: 800px;
-      margin: auto;
-      padding: 2rem;
-    }
-    section {
-      margin-bottom: 2rem;
-    }
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-    .news-item {
-      margin-bottom: 1rem;
-      padding-bottom: 1rem;
-      border-bottom: 1px solid #ccc;
-    }
-    .news-item h3 {
-      margin: 0 0 0.5rem;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Baloncesto - Inicio</title>
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header>
-    <h1>Álvaro Guillén Martín</h1>
-    <p>Desarrollador y entusiasta de la tecnología</p>
-  </header>
+    <header>
+        <h1>Baloncesto</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="equipamiento.html">Equipamiento</a></li>
+                <li><a href="estilos.html">Estilos de Juego</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <nav>
-    <a href="#sobre-mi">Sobre mí</a>
-    <a href="#noticias">Noticias</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
+    <main>
+        <section class="welcome">
+            <h2>Bienvenido al mundo del baloncesto</h2>
+            <p>El baloncesto es más que un deporte, es una pasión que une a millones alrededor del mundo.</p>
+        </section>
 
-  <main>
-    <section id="sobre-mi">
-      <h2>Sobre mí</h2>
-      <p>Hola, soy Álvaro. Me apasiona el desarrollo web, la inteligencia artificial y la creación de soluciones innovadoras. Este es mi sitio personal donde comparto información sobre mis proyectos y noticias relevantes.</p>
-    </section>
+        <section class="news">
+            <h3>Noticias recientes</h3>
+            <article>
+                <h4>Campeonato mundial 2025 en camino</h4>
+                <p>Los mejores equipos del mundo se preparan para el gran evento que tendrá lugar en verano de 2025.</p>
+            </article>
+            <article>
+                <h4>Nuevas reglas FIBA para la próxima temporada</h4>
+                <p>La Federación Internacional de Baloncesto anunció cambios en la normativa para mejorar la dinámica del juego.</p>
+            </article>
+        </section>
+    </main>
 
-    <section id="noticias">
-      <h2>Noticias</h2>
-      <div class="news-item">
-        <h3>¡Lanzamiento del nuevo portafolio!</h3>
-        <p>Estoy emocionado de anunciar el lanzamiento de mi nuevo sitio personal, creado con HTML y CSS desde cero.</p>
-        <p><em>28 de mayo de 2025</em></p>
-      </div>
-      <div class="news-item">
-        <h3>Colaboración con proyecto open source</h3>
-        <p>He comenzado a contribuir a un proyecto de código abierto sobre visualización de datos.</p>
-        <p><em>21 de mayo de 2025</em></p>
-      </div>
-    </section>
-
-    <section id="contacto">
-      <h2>Contacto</h2>
-      <p>Puedes encontrarme en <a href="https://github.com/alvaroguillenm" target="_blank">GitHub</a> o enviarme un correo a <strong>alvaro@example.com</strong>.</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Álvaro Guillén Martín</p>
-  </footer>
+    <footer>
+        <p>&copy; 2025 Baloncesto. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
+2. historia.html
+html
+Copiar
+Editar
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Baloncesto - Historia</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header>
+        <h1>Baloncesto</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="historia.html" class="active">Historia</a></li>
+                <li><a href="equipamiento.html">Equipamiento</a></li>
+                <li><a href="estilos.html">Estilos de Juego</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Historia del Baloncesto</h2>
+            <p>El baloncesto fue inventado en 1891 por James Naismith en Springfield, Massachusetts. Desde entonces, ha evolucionado hasta convertirse en uno de los deportes más populares a nivel mundial.</p>
+            <p>Su crecimiento ha sido exponencial gracias a grandes leyendas, campeonatos y la pasión de sus seguidores.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Baloncesto. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+3. equipamiento.html
+html
+Copiar
+Editar
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Baloncesto - Equipamiento</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header>
+        <h1>Baloncesto</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="equipamiento.html" class="active">Equipamiento</a></li>
+                <li><a href="estilos.html">Estilos de Juego</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Equipamiento básico para jugar</h2>
+            <ul>
+                <li>Pelota de baloncesto</li>
+                <li>Zapatillas deportivas específicas para baloncesto</li>
+                <li>Camiseta y pantalones cortos cómodos</li>
+                <li>Cancha con aro reglamentario</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Baloncesto. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+4. estilos.html
+html
+Copiar
+Editar
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Baloncesto - Estilos de Juego</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header>
+        <h1>Baloncesto</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="equipamiento.html">Equipamiento</a></li>
+                <li><a href="estilos.html" class="active">Estilos de Juego</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Estilos de Juego en Baloncesto</h2>
+            <p>El baloncesto puede jugarse de diversas maneras, dependiendo del estilo del equipo y las habilidades individuales:</p>
+            <ul>
+                <li><strong>Juego en equipo:</strong> Prioriza la estrategia, pases rápidos y movimientos coordinados.</li>
+                <li><strong>Juego individualista:</strong> Destaca habilidades personales como el dribbling y tiros en solitario.</li>
+                <li><strong>Juego físico:</strong> Basado en la defensa fuerte y contacto físico para dominar el partido.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Baloncesto. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+5. contacto.html
+html
+Copiar
+Editar
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Baloncesto - Contacto</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header>
+        <h1>Baloncesto</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="equipamiento.html">Equipamiento</a></li>
+                <li><a href="estilos.html">Estilos de Juego</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contacto</h2>
+            <p>¿Quieres ponerte en contacto? Envíanos un correo a: <a href="mailto:info@baloncesto.com">info@baloncesto.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Baloncesto. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+6. css/style.css
+css
+Copiar
+Editar
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+header {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #333;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    display: inline-block;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #555;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+main section {
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+main section:last-child {
+    border-bottom: none;
+}
+
+h1, h2, h3, h4 {
+    margin-bottom: 1rem;
+    color: #1e1e1e;
+}
+
+footer {
+    background-color: #1e1e1e;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2
