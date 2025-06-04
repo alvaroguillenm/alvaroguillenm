@@ -1,163 +1,141 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Baloncesto</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #eef3f9;
-      color: #333;
-      margin: 0;
-    }
-    header {
-      background-color: #003366;
-      color: white;
-      padding: 1rem;
-    }
-    header h1 {
-      margin: 0;
-    }
-    nav ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      margin-top: 0.5rem;
-    }
-    nav a {
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      color: #ff4c4c;
-      border-bottom: 2px solid #ff4c4c;
-    }
-    main {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 1.5rem;
-      background-color: white;
-      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-      border-radius: 10px;
-    }
-    section {
-      margin-bottom: 3rem;
-    }
-    h2 {
-      color: #003366;
-      border-bottom: 2px solid #003366;
-      padding-bottom: 0.5rem;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 1rem;
-    }
-    th, td {
-      padding: 0.75rem 1rem;
-      text-align: center;
-      border-bottom: 1px solid #ddd;
-    }
-    th {
-      background-color: #1e1e1e;
-      color: white;
-    }
-    tbody tr:hover {
-      background-color: #f0f0f0;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #003366;
-      color: white;
-      margin-top: 2rem;
-    }
-  </style>
+<title>La Fama en Miami</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {
+  font-family: "Open Sans";
+  background-color: #B3E5FC;
+  margin: 0;
+  padding: 0;
+}
+
+.header-background {
+  background-image: url('imagenes/miami_sunset_shutterstock_2289145067_wcmjjv.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 64px 16px;
+  text-align: center;
+}
+.header-background h1 {
+  font-size: 64px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.header-background h6 {
+  font-size: 20px;
+}
+
+.futbol-icono-flotante {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #333;
+  color: white;
+  border-radius: 50%;
+  padding: 14px 16px;
+  font-size: 22px;
+  z-index: 1000;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.futbol-icono-flotante:hover {
+  background-color: #555;
+}
+
+.seccion-rosa {
+  background-color: #fbe3e3;
+  color: black;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 32px;
+}
+
+.seccion-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.seccion-contenido img {
+  width: 300px;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.seccion-contenido p {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.6;
+}
+</style>
 </head>
+
 <body>
 
-  <header>
-    <h1>Baloncesto</h1>
-    <nav>
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#historia">Historia</a></li>
-        <li><a href="#equipamiento">Equipamiento</a></li>
-        <li><a href="#estilos">Estilos de Juego</a></li>
-        <li><a href="#clasificacion">Clasificación ACB</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
+<!-- Icono de fútbol flotante -->
+<a href="https://es.intermiamicf.com/standings/#season=MLS-SEA-0001K9&live=false" target="_blank" class="futbol-icono-flotante" title="Ver clasificación Inter Miami">
+  <i class="fa fa-soccer-ball-o"></i>
+</a>
+
+<div class="w3-content" style="max-width:1600px">
+
+  <!-- Encabezado -->
+  <header class="header-background">
+    <h1><b>Famosos en Miami</b></h1>
+    <h6>Algunas de las personas y lugares más conocidos de <span class="w3-tag w3-black">Miami</span></h6>
   </header>
 
-  <main>
-    <section id="inicio">
-      <h2>Inicio</h2>
-      <p>Bienvenido al mundo del baloncesto. Explora su historia, estilos de juego, equipamiento y mucho más.</p>
-    </section>
+  <div class="w3-row w3-padding w3-border">
+    <div class="w3-col l8 s12">
 
-    <section id="historia">
-      <h2>Historia del Baloncesto</h2>
-      <p>El baloncesto fue inventado en 1891 por James Naismith en Massachusetts, Estados Unidos. Desde entonces ha evolucionado hasta convertirse en un deporte global.</p>
-    </section>
+      <!-- Sección Bad Bunny -->
+      <div class="w3-container seccion-rosa">
+        <h3 class="w3-center">Bad Bunny en Miami</h3>
+        <h5 class="w3-center">El ícono del reguetón, <span class="w3-opacity">Junio 2025</span></h5>
+        <div class="seccion-contenido">
+          <img src="imagenes/badbunny miami.jpg" alt="Bad Bunny">
+          <p><strong>Bad Bunny</strong> visita con frecuencia Miami por sus conciertos, fiestas y colaboraciones. Es una figura clave en el ambiente musical latino en la ciudad.</p>
+        </div>
+      </div>
 
-    <section id="equipamiento">
-      <h2>Equipamiento</h2>
-      <ul>
-        <li>Balón de baloncesto</li>
-        <li>Zapatillas deportivas</li>
-        <li>Canastas y tableros</li>
-        <li>Uniformes de juego</li>
-      </ul>
-    </section>
+      <!-- Sección Miami Beach -->
+      <div class="w3-container seccion-rosa">
+        <h3 class="w3-center">Miami Beach</h3>
+        <h5 class="w3-center">Una de las playas más famosas del mundo, <span class="w3-opacity">Todo el año</span></h5>
+        <div class="seccion-contenido">
+          <img src="imagenes/miamibeach.jpg" alt="Miami Beach">
+          <p><strong>Miami Beach</strong> es un ícono turístico, conocido por su vida nocturna, arquitectura art déco y arena blanca. Celebridades y turistas la visitan constantemente.</p>
+        </div>
+      </div>
 
-    <section id="estilos">
-      <h2>Estilos de Juego</h2>
-      <p>Los estilos de juego incluyen ofensiva rápida, juego en zona, defensa agresiva, y estrategias como el pick and roll o juego interior con pivots fuertes.</p>
-    </section>
+      <!-- Sección Messi -->
+      <div class="w3-container seccion-rosa">
+        <h3 class="w3-center">Messi en el Inter Miami</h3>
+        <h5 class="w3-center">Una leyenda del fútbol en Estados Unidos, <span class="w3-opacity">Desde 2023</span></h5>
+        <div class="seccion-contenido">
+          <img src="imagenes/messi miami.jpg" alt="Messi">
+          <p><strong>Lionel Messi</strong> revolucionó la MLS al unirse al Inter de Miami. Sus partidos atraen a multitudes y han dado un nuevo impulso al fútbol en la ciudad.</p>
+        </div>
+      </div>
 
-    <section id="clasificacion">
-      <h2>Clasificación ACB 2025</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Pos</th>
-            <th>Equipo</th>
-            <th>Jugados</th>
-            <th>Ganados</th>
-            <th>Perdidos</th>
-            <th>Puntos</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>1</td><td>Real Madrid</td><td>30</td><td>25</td><td>5</td><td>55</td></tr>
-          <tr><td>2</td><td>FC Barcelona</td><td>30</td><td>24</td><td>6</td><td>54</td></tr>
-          <tr><td>3</td><td>Unicaja Málaga</td><td>30</td><td>20</td><td>10</td><td>50</td></tr>
-          <tr><td>4</td><td>Baskonia</td><td>30</td><td>18</td><td>12</td><td>48</td></tr>
-          <tr><td>5</td><td>Valencia Basket</td><td>30</td><td>16</td><td>14</td><td>46</td></tr>
-          <tr><td>6</td><td>Joventut Badalona</td><td>30</td><td>15</td><td>15</td><td>45</td></tr>
-          <tr><td>7</td><td>Gran Canaria</td><td>30</td><td>14</td><td>16</td><td>44</td></tr>
-          <tr><td>8</td><td>Casademont Zaragoza</td><td>30</td><td>12</td><td>18</td><td>42</td></tr>
-          <tr><td>9</td><td>Estudiantes</td><td>30</td><td>10</td><td>20</td><td>40</td></tr>
-          <tr><td>10</td><td>Manresa</td><td>30</td><td>8</td><td>22</td><td>38</td></tr>
-        </tbody>
-      </table>
-    </section>
+    </div>
 
-    <section id="contacto">
-      <h2>Contacto</h2>
-      <p>Puedes escribirnos a: <a href="mailto:info@baloncesto.com">info@baloncesto.com</a></p>
-      <p>También puedes seguirnos en redes sociales para estar al día con las noticias del baloncesto.</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Baloncesto. Todos los derechos reservados.</p>
-  </footer>
+    <div class="w3-col l4">
+      <!-- Vacío como pediste -->
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
