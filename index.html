@@ -13,36 +13,71 @@
     font-family: "Raleway", sans-serif;
   }
   .bgimg {
-    background-image: url('imagenes/photo-1519861531473-9200262188bf.jpg');
-    height: 100%;
+    background-image: url('imagenes/NBA-con-grandes-posibilidades-de-iniciar-la-próxima-temporada-el-22-de-diciembre.jpg');
+    min-height: 100%;
     background-position: center;
     background-size: cover;
-    display: flex;
-    justify-content: center;  /* centra horizontal */
-    align-items: center;      /* centra vertical */
-    flex-direction: column;
-    text-align: center;
     color: white;
+    position: relative;
+  }
+  /* Logo arriba izquierda */
+  .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  /* Centro vertical y horizontal */
+  .center-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
   }
   h1 {
-    margin-bottom: 0; /* elimina margen inferior para acercar la línea */
+    margin-bottom: 0;
   }
   hr {
-    margin: 5px auto 20px auto; /* pequeño espacio arriba y más abajo */
+    margin: 5px auto 20px auto;
     width: 40%;
     border-color: grey;
   }
   p {
     margin-top: 0;
   }
+  /* Enlace abajo izquierda */
+  .bottom-link {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 1rem;
+  }
+  .bottom-link a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .bottom-link a:hover {
+    text-decoration: underline;
+  }
 </style>
 </head>
 <body>
 
 <div class="bgimg">
-  <h1 class="w3-jumbo w3-animate-top">Baloncesto</h1>
-  <hr>
-  <p class="w3-large"> La NBA, para los FANS DEL BALONCESTO</p>
+  <div class="logo">Logo</div>
+
+  <div class="center-content">
+    <h1 class="w3-jumbo w3-animate-top">Baloncesto</h1>
+    <hr>
+    <p class="w3-large">Lo Mejor de la NBA, para los FANS DEL BALONCESTO</p>
+  </div>
+
+  <div class="bottom-link">
+    <a href="Baloncesto.html" target="_blank">CLICK PARA VER NOTICIAS</a>
+  </div>
 </div>
 
 </body>
