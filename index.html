@@ -15,7 +15,15 @@
     }
 
     body {
-      color: orange; /* Aplica el color naranja a todo el texto */
+      color: red; /* Aplica color rojo al texto por defecto */
+    }
+
+    a {
+      color: red; /* Enlaces también en rojo */
+    }
+
+    hr {
+      border-color: red; /* Línea horizontal en rojo */
     }
 
     .bgimg {
@@ -24,21 +32,11 @@
       background-position: center;
       background-size: cover;
     }
-
-    /* Aseguramos que los enlaces también sean naranjas */
-    a {
-      color: orange;
-    }
-
-    /* Opcional: cambiar el color del borde del <hr> a naranja */
-    hr {
-      border-color: orange;
-    }
   </style>
 </head>
 <body>
 
-  <!-- Quitamos w3-text-white para que no sobreescriba el color -->
+  <!-- Eliminamos w3-text-white para que se vea el color rojo -->
   <div class="bgimg w3-display-container w3-animate-opacity">
     <div class="w3-display-topleft w3-padding-large w3-xlarge">
       Logo
