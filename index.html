@@ -7,30 +7,42 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
-body,h1 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-.bgimg {
-  background-image: url('imagenes/photo-1519861531473-9200262188bf.jpg');
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
-}
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+  }
+  .bgimg {
+    background-image: url('imagenes/NBA-con-grandes-posibilidades-de-iniciar-la-próxima-temporada-el-22-de-diciembre.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;  /* centra horizontal */
+    align-items: center;      /* centra vertical */
+    flex-direction: column;
+    text-align: center;
+    color: white;
+  }
+  h1 {
+    margin-bottom: 0; /* elimina margen inferior para acercar la línea */
+  }
+  hr {
+    margin: 5px auto 20px auto; /* pequeño espacio arriba y más abajo */
+    width: 40%;
+    border-color: grey;
+  }
+  p {
+    margin-top: 0;
+  }
 </style>
 </head>
 <body>
 
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  <div class="w3-display-topleft w3-padding-large w3-xlarge">
-    Logo
-  </div>
-  <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top">Baloncesto</h1>
-    <hr class="w3-border-grey" style="margin:auto;width:40%">
-    <p class="w3-large w3-center">Lo Mejor de la NBA, para los FANS DEL BALONCESTO</p>
-  </div>
-  <div class="w3-display-bottomleft w3-padding-large">
-   <a href="Baloncesto.html" target="_blank">  CLICK PARA VER NOTICIAS</a>
-  </div>
+<div class="bgimg">
+  <h1 class="w3-jumbo w3-animate-top">Baloncesto</h1>
+  <hr>
+  <p class="w3-large">Lo Mejor de la NBA, para los FANS DEL BALONCESTO</p>
 </div>
 
 </body>
