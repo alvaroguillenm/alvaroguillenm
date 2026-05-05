@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NBA BLOG</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <style>
+    body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+    body {
+      background-color: #f9f9f9;
+    }
+    .basketball-theme {
+      background-color: #d35400;
+      color: white;
+    }
+    .basketball-card {
+      border-left: 6px solid #e67e22;
+    }
+    .read-more-content {
+      display: none;
+      margin-top: 10px;
+    }
+    /* Icono pelota */
+    .basketball-icon {
+      cursor: pointer;
+      display: inline-block;
+      margin: 10px 0;
+      width: 40px;
+      height: 40px;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/7/7a/Basketball.png') no-repeat center center;
+      background-size: contain;
+      transition: transform 0.3s ease;
+    }
+    .basketball-icon:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body class="w3-light-grey">
+
+<!-- Enlace superior izquierdo a la plantilla -->
+<div style="position: fixed; top: 10px; left: 10px; z-index: 999;">
+  <a href="https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_blog&stacked=h" 
+     class="w3-button w3-orange w3-small w3-round" 
+     target="_blank" 
+     title="Ver plantilla original de W3.CSS">
+    Plantilla
+  </a>
+</div>
+
+<div class="w3-content" style="max-width:1400px">
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-32 basketball-theme"> 
+    <h1><b>NBA BLOG</b></h1>
+    <p>Todo sobre la mejor liga de baloncesto del mundo. <span class="w3-tag w3-black">by BasketFan</span></p>
+  </header>
+
+  <!-- Main Content -->
+  <div class="w3-row">
+
+    <!-- Página 1 -->
+    <div class="w3-col l8 s12" id="page1">
+      <!-- Post 1 -->
+      <div class="w3-card-4 w3-margin w3-white basketball-card">
+        <img src="imagenes/large_20221215193922.jpg" alt="Lakers vs Celtics" style="width:100%">
+        <div class="w3-container">
+          <h3><b>🏀 Lakers vs Celtics: Rivalidad eterna</b></h3>
+          <h5>Clásico NBA, <span class="w3-opacity">6 de Junio, 2025</span></h5>
+        </div>
+        <div class="w3-container">
+          <p>Un duelo de leyendas que nunca decepciona...</p>
+          <div id="extra1" class="read-more-content">
+            <p>Con un triple doble de LeBron y un Tatum inspirado, el partido se decidió en los últimos segundos. Revive los mejores momentos y análisis aquí.</p>
+          </div>
+          <button class="w3-button w3-padding-small w3-white w3-border" onclick="toggleReadMore('extra1', this)">jjjLEER MÁS »</button>
+        </div>
+      </div>
+
+      <!-- Post 2 -->
+      <div class="w3-card-4 w3-margin w3-white basketball-card">
+        <img src="imagenes/GettyImages-1716737.jpg" alt="Top Dunks" style="width:100%">
+        <div class="w3-container">
+          <h3><b>🔥 Top 5 mates de la semana</b></h3>
+          <h5>Highlights, <span class="w3-opacity">5 de Junio, 2025</span></h5>
+        </div>
+        <div class="w3-container">
+          <p>Voladas espectaculares de Morant, Zion y Giannis...</p>
+          <div id="extra2" class="read-more-content">
+            <p>La número 1 fue de Anthony Edwards sobre Gobert. ¡Una locura total! Mira todos los videos en nuestro canal de YouTube.</p>
+          </div>
+          <button class="w3-button w3-padding-small w3-white w3-border" onclick="toggleReadMore('extra2', this)">jjjLEER MÁS »</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Página 2 -->
+    <div class="w3-col l8 s12" id="page2" style="display:none">
+      <!-- Post 3 -->
+      <div class="w3-card-4 w3-margin w3-white basketball-card">
+        <img src="imagenes/17491167783844.jpg" alt="Finales NBA" style="width:100%">
+        <div class="w3-container">
+          <h3><b>🏆 Predicciones Finales NBA 2025</b></h3>
+          <h5>Análisis, <span class="w3-opacity">6 de Junio, 2025</span></h5>
+        </div>
+        <div class="w3-container">
+          <p>¿Nuggets vs Bucks? ¿Otra sorpresa de Miami? Nuestros expertos opinan.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="w3-col l4">
+      <!-- Perfil -->
+      <div class="w3-card w3-margin w3-margin-top">
+        <img src="imagenes/922318-3840x2160-desktop-4k-logo-nba-background.jpg" style="width:100%" alt="Profile">
+        <div class="w3-container w3-white">
+          <h4><b>BasketFan</b></h4>
+          <p>Analista aficionado, fan de los Lakers y seguidor desde la era de Kobe. ¡Bienvenido a mi blog de NBA!</p>
+        </div>
+      </div><hr>
+
+      <!-- Posts Populares -->
+      <div class="w3-card w3-margin">
+        <div class="w3-container w3-padding">
+          <h4>📈 Posts populares</h4>
+        </div>
+        <ul class="w3-ul w3-hoverable w3-white">
+          <li class="w3-padding-16">
+            <img src="imagenes/curry.jpg" alt="Steph" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Steph Curry imparable</span><br>
+            <span>50 puntos y récord de triples</span>
+          </li>
+        </ul>
+      </div><hr>
+
+      <!-- Etiquetas -->
+      <div class="w3-card w3-margin">
+        <div class="w3-container w3-padding">
+          <h4>🏷️ Etiquetas</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p><span class="w3-tag w3-black w3-margin-bottom">NBA</span>
+          <span class="w3-tag w3-orange w3-small w3-margin-bottom">Dunks</span>
+          <span class="w3-tag w3-orange w3-small w3-margin-bottom">Playoffs</span>
+          <span class="w3-tag w3-orange w3-small w3-margin-bottom">Finales</span>
+          <span class="w3-tag w3-orange w3-small w3-margin-bottom">LeBron</span>
+          <span class="w3-tag w3-orange w3-small w3-margin-bottom">Zion</span></p>
+        </div>
+      </div>
+
+      <!-- Icono Pelota de Baloncesto -->
+      <div class="w3-card w3-margin w3-padding w3-white w3-center">
+        <a href="https://www.nba.com/standings" target="_blank" rel="noopener noreferrer" title="Ver clasificación oficial NVBA">
+          <div class="basketball-icon"></div>
+          <p><b>jjjClasificación NBA</b></p>
+        </a>
+      </div>
+    </div>
+
+  </div><br>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom" onclick="showPage(1)">jjjAnterior</button>
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom" onclick="showPage(2)">jjjSiguiente »</button>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<!-- Script -->
+<script>
+  function toggleReadMore(id, btn) {
+    const content = document.getElementById(id);
+    if (content.style.display === "none" || content.style.display === "") {
+      content.style.display = "block";
+      btn.innerText = "LEER MENOS «";
+    } else {
+      content.style.display = "none";
+      btn.innerText = "LEER MÁS »";
+    }
+  }
+
+  function showPage(page) {
+    document.getElementById("page1").style.display = page === 1 ? "block" : "none";
+    document.getElementById("page2").style.display = page === 2 ? "block" : "none";
+  }
+</script>
+
+</body>
+</html>
